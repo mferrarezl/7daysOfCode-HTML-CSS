@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Variáveis de cor e fonte */
+:root {
+    --cor-background: #FFFFFF;
+    --cor-principal: #667085;
+    --cor-secundaria: #8E2424;
+    --cor-titulo: #101828;
+    --cor-fundo: rgba(142, 36, 36, 4%);
+    --cor-fundo-secundaria: #b94848;
+    --cor-borda: #EAECF0;
+    --cor-footer: #F9FAFB;
+    --cor-borda-rodape: #D0D5DD;
+    --cor-copyright: #98A2B3;
+
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--cor-background);
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+}
+/* Cabeçalho Navbar */
+.nav-cabecalho {
+    margin: 1.2em 10%;
+}
+
+.nav-conteudo-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo-cabecalho {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 0.5em;
+}
+
+.nav-titulo-cabecalho {
+    color: var(--cor-titulo);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.nav-lista-cabecalho {
+    display: flex;
+    gap: 2em;
+    margin: 0 30em 0 0;
+}
+
+.nav-link-cabecalho, .nav-login {
+    text-decoration: none;
+    color: var(--cor-principal);
+    font-weight: 500;
+}
+
+.nav-login {
+    margin-right: 2em;
+}
+
+.nav-signup {
+    text-decoration: none;
+    color: var(--cor-background);
+    background-color: var(--cor-secundaria);
+    padding: 0.8em 1em;
+    border-radius: 8px;
+}
+.nav-signup:hover {
+    background-color: var(--cor-fundo-secundaria);
+}
+
+/* Section Cabeçalho */
+.cabecalho {
+    text-align: center;
+    margin: 6em 29%;
+}
+
+.titulo-secundario {
+    color: var(--cor-secundaria);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.titulo-principal {
+    color: var(--cor-titulo);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 0.6em;
+}
+
+.cabecalho p {
+    font-size: 20px;
+}
+
+
+/* Section Metricas */
+.metricas-container {
+    display: flex;
+    margin: 0 10% 6em 10%;
+}
+
+.metricas-container h3 {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    font-size: 60px;
+    margin-bottom: 0.3em;
+}
+
+.metricas-container h2 {
+    font-size: 18px;
+    color: var(--cor-titulo);
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.metricas-container p {
+    font-size: 16px;
+}
+
+.item_metricas-container {
+    padding-right: 10%;
+    margin-right: 10px; 
+}
+
+.item_metricas-container:last-child {
+    margin-right: 0;
+    padding-right: 0;
+}
+ /* Section Talentos */
+ .talentos-container {
+    text-align: center;
+    margin: 10% 10% 0 10%;
+ }
+
+ .talentos-container h3 {
+    display: inline-block;
+    color: var(--cor-secundaria);
+    font-size: 14;
+    font-weight: 500;
+    background-color: var(--cor-fundo);
+    padding: 0.2em 0.8em;
+    border-radius: 14px;
+    margin-bottom: 1.3em;
+ }
+
+ .talentos-container h2 {
+    color: var(--cor-titulo);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+ }
+
+ .talentos-container p {
+    font-size: 20px;
+ }
+
+ .talentos-container img {
+    width: 100%;
+    margin: 5% 0;
+ }
+
+ /* Section Vagas */
+.vagas-container {
+    margin: 0 15%;
+}
+
+.vagas-conteudo {
+    margin: 0 10% 10% 10%;
+}
+
+.vagas-area {
+    color: var(--cor-titulo);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 2em;
+}
+
+.vagas-categoria {
+    margin-bottom: 4em;
+}
+
+.vagas {
+    padding: 1.5em;
+    border: 1px solid var(--cor-borda);
+    border-radius: 16px;
+    margin-bottom: 2em;
+    
+}
+
+.vagas-titulo {
+    color: var(--cor-titulo);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.vagas-info {
+    display: flex;
+    margin-top: 2em; 
+    gap: 2em;
+}
+
+/* Section Colab Depoimentos */
+.depoimentos-container {
+    text-align: center;
+    margin: 0 10% 6em 10%;
+    background-color: var(--cor-fundo);
+    padding: 4em;
+}
+
+.depoimentos-container h3 {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--cor-secundaria);
+    margin-bottom: 1em;
+}
+
+.depoimentos-container h2 {
+    font-weight: 500;
+    font-size: 36px;
+    color: var(--cor-titulo);
+    margin-bottom: 1em;
+}
+
+.depoimentos-colab img, p {
+    margin-bottom: 1em;
+    font-size: 14px;
+}
+
+.colab-nome {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--cor-titulo);
+}
+
+/* Footer */
+.rodape {
+    background-color: var(--cor-footer);
+    text-align: center;
+    padding: 6em;
+}
+
+.rodape h2 {
+    color: var(--cor-titulo);
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+}
+
+.rodape-texto {
+    font-size: 20px;
+    margin-bottom: 2.5em;
+}
+
+#email {
+    width: 360px;
+    border: 1px solid var(--cor-borda-rodape);
+    border-radius: 8px;
+    padding: 1em;
+    font-size: 16px;
+    color: var(--cor-principal);
+    margin-right: 1em;
+}
+
+#email::placeholder {
+    color: var(--cor-principal);
+}
+
+#enviar-fomulario {
+    color: var();
+    padding: 1em;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: var(--cor-secundaria);
+    border: none;
+    color: var(--cor-background);
+}
+
+#enviar-fomulario:hover {
+    background-color: var(--cor-fundo-secundaria);
+    cursor: pointer;
+}
+
+.corpyright {
+color: var(--cor-copyright);
+font-size: 16px;
+margin-top: 2em;
+}
